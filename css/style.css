@@ -331,13 +331,13 @@ p {
 .main_section > .con > .img-card > .G-card > p {
     color: #3c3c3c;
     font-size: 1rem;
-    padding: 0.2rem 0.2rem 1rem 0.2rem;
+    padding: 0.2rem 0.2rem 1rem 0.5rem;
 }
 
 .main_section > .con > .img-card > .G-card > b {
     color: #3c3c3c;
     font-size: 1.2rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 .main_section > .con > .img-card > .G-card:hover a img {
@@ -393,7 +393,7 @@ p {
         width: 78%;
     }
     .main_section > .con > .img-card {
-        padding: 4rem;
+        padding: 7rem 4rem;
         column-count: 3;
         -webkit-column-count: 3;
         -moz-column-count: 3;
@@ -411,15 +411,8 @@ p {
     .main_section > .con {
         width: 100%;
     }
-
-    .main_section > .con > .img-card {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-    }
-
     .main_section > .con .footer div {
-        width: 33.3333%;
+        width: 38%;
     }
 }
 
