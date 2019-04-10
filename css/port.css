@@ -1,6 +1,6 @@
 /*con 시작*/
 .main_section > .con {
-    padding: 5rem;
+    padding: 5rem 10rem;
 }
 
 .main_section > .con > .con_bigbox {
@@ -10,34 +10,28 @@
 }
 
 .main_section > .con > .con_bigbox > .con_title {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
 
 .main_section > .con > .con_bigbox > .con_title h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 0.2rem 0;
-}
-
-.main_section > .con > .con_bigbox > .con_title h4 {
-    font-size: 0.9rem;
-    padding: 0.2rem 0;
-    color: #3c3c3c;
 }
 
 .main_section > .con > .con_bigbox > h1 {
     color: #3c3c3c;
     text-align: right;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     font-size: 1rem;
     padding: 4rem 0;
 }
 
 .main_section > .con > .con_bigbox > .p-contents {
-    width: 72%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
 }
@@ -45,7 +39,7 @@
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
     width: 50%;
     margin: 1rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
     border: 1px solid #f2f2f2;
     opacity: 0.9;
 }
@@ -58,7 +52,7 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption {
@@ -71,15 +65,15 @@
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption::before {
     border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0,1);
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption::after {
     border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	-webkit-transform: scale(1,0);
-	transform: scale(1,0);
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption::after,
@@ -114,40 +108,40 @@
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con:hover figcaption::after {
     opacity: 1;
     -webkit-transform: scale(1);
-	transform: scale(1);
+    transform: scale(1);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con h2 {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-	padding-top: 28%;
+    padding-top: 28%;
     text-align: center;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,-2rem,0);
-	transform: translate3d(0,-20px,0);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -2rem, 0);
+    transform: translate3d(0, -20px, 0);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con p {
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
-	padding: 2rem 0;
+    padding: 2rem 0;
     text-align: center;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,2rem,0);
-	transform: translate3d(0,20px,0);
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 2rem, 0);
+    transform: translate3d(0, 2rem, 0);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con:hover h2,
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con:hover p {
-   opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0); 
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption a {
@@ -160,19 +154,48 @@
     z-index: 99;
 }
 
-@media(max-width:1200px) {
+/*con 반응형*/
+
+@media(max-width:1685px) {
     .main_section > .con {
-        width: 100%;
-        box-sizing: border-box;
+        padding: 5rem;
+    }
+
+    .main_section > .con > .con_bigbox > .con_title {
+        width: 70%;
     }
 
     .main_section > .con > .con_bigbox > .p-contents {
         width: 75%;
     }
-    
-    .main_section > .con > .con_bigbox > .con_title {
+
+    .main_section > .con > .con_bigbox > h1 {
+        width: 70%;
+    }
+}
+
+@media(max-width:1200px) {
+    .main_section > .con {
+        width: 100%;
+        padding: 6rem;
+    }
+
+    .main_section > .con > .con_bigbox > .con_title,
+    .main_section > .con > .con_bigbox > h1 {
         width: 75%;
-    }    
+    }
+
+    .main_section > .con > .con_bigbox > .p-contents {
+        width: 85%;
+    }
+
+    .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con h2 {
+        font-size: 1.2rem;
+        padding-top: 22%;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, -1.5rem, 0);
+        transform: translate3d(0, -1.5rem, 0);
+    }
 }
 
 @media(max-width:800px) {
@@ -183,12 +206,17 @@
     .main_section > .con > .con_bigbox > .con_title h2 {
         font-size: 1.2rem;
     }
-    
+
     .main_section > .con > .con_bigbox > .p-contents {
         display: block;
         padding: 0;
-    } 
-        
+        width: 75%;
+    }
+    .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con h2 {
+        font-size: 1.7rem;
+        padding-top: 28%;
+    }
+
     .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
         width: 100%;
         margin: 0;
@@ -200,29 +228,33 @@
     .main_section > .con {
         padding: 2rem;
     }
-    
+
     .main_section > .con > .con_bigbox > .p-contents {
         display: block;
     }
-    
-    .main_section > .con > .con_bigbox > .con_title {
+
+    .main_section > .con > .con_bigbox > .con_title,
+    .main_section > .con > .con_bigbox > h1 {
         width: 80%;
     }
-    
+
     .main_section > .con > .con_bigbox > .p-contents {
         display: block;
         width: 80%;
     }
     
+    .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con h2 {
+        font-size: 1.5rem;
+        padding-top: 22%;
+    }
+
     .main_section > .con > .con_bigbox > .p-contents.p-border-bottom {
         border-bottom: 1px solid #dfdfdf;
     }
-    
+
     .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
         width: 100%;
         padding: 0.2rem;
         margin-bottom: 4rem;
     }
 }
-
-

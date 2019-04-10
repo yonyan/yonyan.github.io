@@ -1,7 +1,7 @@
 /*con 시작*/
 
 .main_section > .con {
-    padding: 5rem;
+    padding: 5rem 10rem;
 }
 
 .main_section > .con > .con_bigbox {
@@ -11,21 +11,21 @@
 }
 
 .main_section > .con > .con_bigbox > .con_title {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
 
 .main_section > .con > .con_bigbox > .con_title h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 0.2rem 0;
 }
 
 .main_section > .con > .con_bigbox > .con_pix {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    padding: 0.2rem;
+    padding: 0.5rem;
     border: 1px solid #f2f2f2;
     position: relative;
 }
@@ -130,7 +130,7 @@
 }
 
 .main_section > .con > .con_bigbox > .contents {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 1rem 0;
     padding-bottom: 5rem;
@@ -141,13 +141,13 @@
     text-align: center;
     color: #3c3c3c;
     padding: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .main_section > .con > .con_bigbox > .contents > p {
     text-align: justify;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: #3c3c3c;
     line-height: 1.2rem;
@@ -162,13 +162,12 @@
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
     width: 33.3333%;
     margin-top: 2rem;
-    margin: 0.2rem;
+    margin: 0.5rem;
 }
 
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item > .c-img {
     padding: 0.2rem;
     border: 1px solid #dfdfdf;
-
 }
 
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item img {
@@ -189,36 +188,59 @@
 }
 
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item > .c-con p {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: #3c3c3c;
+    line-height: 1.2rem;
 }
 
 .main_section > .con > .con_bigbox > h1 {
     color: #3c3c3c;
     text-align: right;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     font-size: 1rem;
     padding: 4rem 0;
 }
 
-
 /*con 반응형*/
+
+@media(max-width:1685px) {
+    .main_section > .con {
+        padding: 5rem;
+    }
+
+    .main_section > .con > .con_bigbox > .con_title {
+        width: 70%;
+    }
+
+    .main_section > .con > .con_bigbox > .con_pix {
+        width: 70%;
+    }
+
+    .main_section > .con > .con_bigbox > .contents {
+        width: 70%;
+    }
+
+    .main_section > .con > .con_bigbox > .contents h6 {
+        font-size: 0.9rem;
+    }
+
+    .main_section > .con > .con_bigbox > h1 {
+        width: 70%;
+    }
+}
 
 @media(max-width:1200px) {
     .main_section > .con {
         width: 100%;
-        box-sizing: border-box;
+        padding: 6rem;
     }
 
     .main_section > .con > .con_bigbox > .contents,
     .main_section > .con > .con_bigbox > .con_title,
-    .main_section > .con > .con_bigbox > .con_pix {
+    .main_section > .con > .con_bigbox > .con_pix,
+    .main_section > .con > .con_bigbox > h1 {
         width: 75%;
-    }
-
-    .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
-        padding: 0.5rem;
     }
 
     .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
@@ -238,6 +260,16 @@
     .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
         font-size: 1.2rem;
     }
+
+    .main_section > .con > .con_bigbox > .contents > .c-item-box {
+        display: block;
+    }
+
+    .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
 }
 
 @media(max-width:420px) {
@@ -252,15 +284,14 @@
 
     .main_section > .con > .con_bigbox > .con_pix {
         width: 85%;
+        padding: 0.2rem;
     }
 
-    .main_section > .con > .con_bigbox > .contents > .c-item-box {
-        display: block;
+    .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
+        font-size: 1rem;
     }
 
     .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
         width: 90%;
-        margin: 0 auto;
-        padding-bottom: 2rem;
     }
 }
