@@ -12,7 +12,8 @@ $('.menu-con>.m-hide').click(function () {
 
 $('.port').click(function (e) {
     console.log(e.currentTarget.dataset.target);
-    $(e.currentTarget.dataset.target).addClass('active');
+    $(e.currentTarget.dataset.target).addClass('active')
+        .get(0).focus();
     $('.modal-open').addClass('active');
     $('html, body').css({
         'overflow': 'hidden'
@@ -38,4 +39,41 @@ $(window).keyup(function (e) {
             'overflow': 'auto'
         });
     }
+});
+
+
+
+
+//아트워크 
+
+$('.e-count > li').click(function () {
+    var $clickedBtn = $(this);
+
+    $clickedBtn.parent().find('.active').removeClass('active');
+    $clickedBtn.addClass('active');
+
+    var index = $clickedBtn.index();
+
+    $('.e-count-con > .e-contents.active').removeClass('active');
+    $('.e-count-con > .e-contents').eq(index).addClass('active');
+});
+
+
+
+
+
+//show all and hide - artwork 
+
+$(function () {
+    var selectedClass = "";
+    $("p").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#e-portfolio").fadeTo(100, 0.1);
+        $("#e-portfolio div").not("." + selectedClass).fadeOut();
+        setTimeout(function () {
+            $("." + selectedClass).fadeIn();
+            $("#e-portfolio").fadeTo(300, 1);
+        }, 300);
+
+    });
 });

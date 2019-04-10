@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>portfolio</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +21,7 @@
 
 
 <body>
-    
+
     <div class="main_section">
 
         <div class="menu">
@@ -35,9 +37,9 @@
                     <li>WEB DESIGNER : )</li>
                     <br>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="work.html">WORK</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="career.html">CAREER</a></li>
+                    <li id="now-here"><a href="port.html">PORTFOLIO &spades;</a></li>
+                    <li><a href="artwork.html">ART WORK</a></li>
                 </ul>
                 <div></div>
                 <div class="m-hide">
@@ -46,7 +48,9 @@
             </div>
 
             <div class="m-img">
-                <img src="img/m-background1.jpeg" alt="">
+                <video data-keepplaying id="video-background" data-ignore autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+                <source src="img/munich2.mp4" type="video/mp4">
+            </video>
             </div>
 
             <div class="menu-con2">
@@ -72,7 +76,7 @@
         <div class="con container">
             <div class="con_bigbox">
                 <div class="con_title">
-                    <h2>Portfolio</h2>
+                    <h2>PORTFOLIO</h2>
                     <h4></h4>
                 </div>
 
@@ -99,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class="p-contents">
+                <div class="p-contents p-border-bottom">
                     <div class="p-pix-box">
                         <div class="p-con">
                             <img src="img2/elwide-1.jpg" alt="">
@@ -130,7 +134,6 @@
     </div>
 
 
-
     <!-- Modal-1 포트폴리오1 옐로오투오-->
     <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
         <div class="modal-dialog" role="document">
@@ -139,14 +142,32 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="close" type="button" data-dismiss="modal">&times;</div>
-                    <h4 class="modal-title">Yello o2o </h4>
+                    <h4 class="modal-title">Yello o2o</h4>
                 </div>
-                <div class="modal-body">
-                    <img src="img2/yelloo2o-2.jpg" alt="">
-                    <p>옐로오투오</p>
+                <div class="modal-body body1">
+                    <div class="m-row1">
+                        <h1>DETAIL <strong>VIEW</strong></h1>
+                        <img class="img-box" src="img2/yelloo2o-2.jpg" alt="">
+                    </div>
+                    <div class="m-row2">
+                    </div>
+                    <div class="m-row3">
+                        <h1>POINT <strong>CONCEPT</strong></h1>
+                        <p>HTML5 / CSS3 웹표준 모바일웹 반응형 퍼블리싱</p>
+                        <P>반응형 레이아웃 / 기본형 </P>
+                        <a href="#"><img src="img/yo2o.jpg" alt=""></a>
+                    </div>
+                    <div class="m-row2">
+                        <h6>[옐로오투오]</h6>
+                        <p>(주)옐로오투오 기본형 홈페이지의 디자인을 그대로 사용하여 반응형 홈페이지로 제작해보았습니다. 반응형 코딩을 연습하면서 만들어 본 페이지이므로 실제 모든 컨텐츠와 사진, 동영상, 디자인 등의 저작권은 (주)옐로오투오에 있으며 상업용으로는 사용하지 않습니다.</p>
+                        <P>&#8226; 메인페이지- 반응형으로 코딩작업
+                            <br> &#8226; 서브페이지- 실제 운영되고 있는 옐로오투오 홈페이지로 링크 연결</P>
+                        <div><a href="#">바로가기</a></div>
+                    </div>
                 </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div type="button" class="btn btn-default" data-dismiss="modal">close</div>
                 </div>
             </div>
 
@@ -162,32 +183,61 @@
                     <div class="close" type="button" data-dismiss="modal">&times;</div>
                     <h4 class="modal-title">US-tralia</h4>
                 </div>
-                <div class="modal-body">
-                    <img src="img2/ustralia-2.jpg" alt="">
-                    <p>오스트레일리아</p>
+                <div class="modal-body body2">
+                    <div class="m-row1">
+                        <h1>DETAIL <strong>VIEW</strong></h1>
+                        <img class="img-box" src="img2/ustralia-3.jpg" alt="">
+                    </div>
+                    <div class="m-row2">
+                    </div>
+                    <div class="m-row3">
+                        <h1>POINT <strong>CONCEPT</strong></h1>
+                        <p>웹 디자인 / HTML5 / CSS3 웹표준 모바일웹 반응형 퍼블리싱 </p>
+                        <a href="#"><img src="img/us_1.jpg" alt=""></a>
+                    </div>
+                    <div class="m-row2">
+                        <h6>[어스-트레일리아]</h6>
+                        <p>초반 웹코딩을 배울시기 반응형을 연습해보자는 의미로 만들어본 페이지입니다. 모든 컨텐츠와 사진 로고는 개인적인 아이디어입니다. 호주에 관한 여행 정보나 워킹홀리데이 관련 정보를 나눌 수 있는 컨텐츠로 구성해보았습니다. 모든 사진은 호주 워킹홀리데이 시절에 직접 찍은 사진입니다.</p>
+                        <div><a href="#">바로가기</a></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div type="button" class="btn btn-default" data-dismiss="modal">close</div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal-3 포트폴리오3 이엘와이드 -->
-    <div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
+    <div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
         <div class="modal-dialog" role="document">
 
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="close" type="button" data-dismiss="modal">&times;</div>
-                    <h4 class="modal-title">EL wide corporation</h4>
+                    <h4 class="modal-title">EL WIDE CORPORATION</h4>
                 </div>
-                <div class="modal-body">
-                    <img src="img2/elwide-3.jpg" alt="">
-                    <p>이엘와이드</p>
+                <div class="modal-body body3">
+                    <div class="m-row1">
+                        <h1>DETAIL <strong>VIEW</strong></h1>
+                        <img class="img-box" src="img2/elwide-3.jpg" alt="">
+                    </div>
+                    <div class="m-row2">
+                    </div>
+                    <div class="m-row3">
+                        <h1>POINT <strong>CONCEPT</strong></h1>
+                        <p>원페이지 / 웹 디자인 / 웹 퍼블리싱</p>
+                        <p>rotate & perspective CSS 효과</p>
+                        <a href="#"><img src="img/elwide.jpg" alt=""></a>
+                    </div>
+                    <div class="m-row2">
+                        <h6>[이엘와이드]</h6>
+                        <p>2015년에 설립되어 방송제작 및 메니지먼트 등의 사업을 펼쳐나가오 있는 이엘와이드 코퍼레이션 홈페이지를 리디자인했습니다. 단조로운 기본형 레이아웃에 역동적인 요소(rotate, perspective 등)를 추가하여 방문자의 흥미를 자극할 수 있도록 디자인 했습니다.</p>
+                        <div><a href="#">바로가기</a></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div type="button" class="btn btn-default" data-dismiss="modal">close</div>
                 </div>
             </div>
 
@@ -195,7 +245,7 @@
     </div>
 
     <!-- Modal-4 포트폴리오4 카페미미미 -->
-    <div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
+    <div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
         <div class="modal-dialog" role="document">
 
             <div class="modal-content">
@@ -203,19 +253,33 @@
                     <div class="close" type="button" data-dismiss="modal">&times;</div>
                     <h4 class="modal-title">Cafe mememi</h4>
                 </div>
-                <div class="modal-body">
-                    <img src="img2/cafeme-3.jpg" alt="">
-                    <p>카페미미미</p>
+                <div class="modal-body body4">
+                    <div class="m-row1">
+                        <h1>DETAIL <strong>VIEW</strong></h1>
+                        <img class="img-box" src="img2/cafeme-2.jpg" alt="">
+                    </div>
+                    <div class="m-row2">
+                    </div>
+                    <div class="m-row3">
+                        <h1>POINT <strong>CONCEPT</strong></h1>
+                        <p>풀페이지 스크롤 / Fullpage scroll / 웹 디자인</p>
+                        <a href="#"><img src="img/meme.jpg" alt=""></a>
+                    </div>
+                    <div class="m-row2">
+                        <h6>[카페미미미]</h6>
+                        <p>카페 홍보를 위한 컨셉 사이트입니다. 이탈리아 밀라노 비아 브레라 23에서 탄생한 글로벌 콜렉트 카페 '미미미' 를 리디자인했습니다. 인터렉티브한 요소 (fullpage scroll)을 추가하여 트렌디함을 갖춘 카페 이미지를 꾀하였습니다. 깔끔한 일러스트 아이콘과 포인트 컬러가 어울러져 화려한 색채와 심플한 디자인으로 편집하였습니다.</p>
+                        <div><a href="#">바로가기</a></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div type="button" class="btn btn-default" data-dismiss="modal">close</div>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="modal-open"></div> 
-    
+    <div class="modal-open"></div>
+
 
 
     <script src="js/jquery.js"></script>

@@ -1,8 +1,6 @@
 /*con 시작*/
-
 .main_section > .con {
-    width: 75%;
-    padding: 4rem;
+    padding: 5rem;
 }
 
 .main_section > .con > .con_bigbox {
@@ -12,7 +10,7 @@
 }
 
 .main_section > .con > .con_bigbox > .con_title {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-top: 3rem;
@@ -39,15 +37,21 @@
 }
 
 .main_section > .con > .con_bigbox > .p-contents {
-    width: 90%;
+    width: 72%;
     margin: 0 auto;
-    padding: 1rem;
     display: flex;
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
     width: 50%;
-    padding: 0 2rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    border: 1px solid #f2f2f2;
+    opacity: 0.9;
+}
+
+.main_section > .con > .con_bigbox > .p-contents > .p-pix-box:hover {
+    opacity: 1;
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con {
@@ -55,7 +59,6 @@
     box-sizing: border-box;
     position: relative;
     background-color: rgba(0,0,0,0.9);
-    margin-bottom: 2rem;
 }
 
 .main_section > .con > .con_bigbox > .p-contents > .p-pix-box .p-con figcaption {
@@ -157,15 +160,18 @@
     z-index: 99;
 }
 
-@media(max-width:1000px) {
+@media(max-width:1200px) {
     .main_section > .con {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .main_section > .con > .con_bigbox > .p-contents,
+    .main_section > .con > .con_bigbox > .p-contents {
+        width: 75%;
+    }
+    
     .main_section > .con > .con_bigbox > .con_title {
-        width: 80%;
+        width: 75%;
     }    
 }
 
@@ -185,7 +191,8 @@
         
     .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
         width: 100%;
-        padding-bottom: 4rem;
+        margin: 0;
+        margin-bottom: 4rem;
     }
 }
 
@@ -199,19 +206,23 @@
     }
     
     .main_section > .con > .con_bigbox > .con_title {
-        width: 85%;
+        width: 80%;
     }
     
     .main_section > .con > .con_bigbox > .p-contents {
         display: block;
         width: 80%;
+    }
+    
+    .main_section > .con > .con_bigbox > .p-contents.p-border-bottom {
         border-bottom: 1px solid #dfdfdf;
     }
     
     .main_section > .con > .con_bigbox > .p-contents > .p-pix-box {
         width: 100%;
-        padding: 0;
-        padding-bottom: 4rem;
+        padding: 0.2rem;
+        margin-bottom: 4rem;
     }
 }
+
 

@@ -1,8 +1,6 @@
 /*con 시작*/
-
 .main_section > .con {
-    width: 75%;
-    padding: 4rem;
+    padding: 5rem;
 }
 
 .main_section > .con > .con_bigbox {
@@ -148,7 +146,7 @@
 }
 
 .main_section > .con > .con_bigbox > .contents > div > .goto-box2:hover {
-    background-color: mediumpurple;
+    background-color: #FF6F61;
     transition: 1s;
 }
 
@@ -172,7 +170,7 @@
 
 /*con 반응형*/
 
-@media(max-width:1000px) {
+@media(max-width:1200px) {
     .main_section > .con {
         width: 100%;
     }
@@ -219,7 +217,7 @@
     
     .main_section > .con > .con_bigbox > .con_title,
     .main_section > .con > .con_bigbox > .con_pix {
-        width: 85%;
+        width: 80%;
     }    
     
     .main_section > .con > .con_bigbox > .contents > div:nth-child(1) {
