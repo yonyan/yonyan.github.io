@@ -1,6 +1,6 @@
 /*con 시작*/
 .main_section > .con {
-    padding: 5rem;
+    padding: 5rem 10rem;
 }
 
 .main_section .con .con_bigbox {
@@ -10,29 +10,30 @@
 }
 
 .main_section .con .con_bigbox .con_title {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
 
 .main_section .con .con_bigbox .con_title h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 0.2rem 0;
 }
 
 .main_section .con .con_bigbox > h1 {
     color: #3c3c3c;
     text-align: right;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     font-size: 1rem;
     padding: 4rem 0;
 }
 
 
+
 .main_section .con .con_bigbox .e-count {
-    width: 70%;
+    width: 60%;
     margin:  0 auto;
 }
 
@@ -40,7 +41,7 @@
     display: inline-block;
     padding: 0.7rem 1rem;
     border: 1px solid #f2f2f2;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: #5c5c5c;
     margin: 0.1rem 0;
 }
@@ -53,11 +54,10 @@
 
 
 #e-portfolio {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 2rem;
     border: 1px solid #f2f2f2;
-    padding-bottom: 0.5rem;
 }
 
 #e-portfolio::after {
@@ -71,7 +71,6 @@
     float: left;
     overflow: hidden;
     padding: 0.5rem;
-    max-height: 250px;
     overflow: hidden;
 }
 
@@ -84,7 +83,20 @@
     display: block;
 }
 
+@media(max-width:1685px) {
+    .main_section > .con {
+        padding: 5rem;
+    }
 
+    .main_section > .con > .con_bigbox > .con_title,
+    .main_section > .con > .con_bigbox > h1 {
+        width: 70%;
+    }
+    .main_section .con .con_bigbox .e-count,
+    #e-portfolio {
+        width: 70%;
+    }
+}
 
 @media(max-width:1200px) {
     .main_section .con {
@@ -92,13 +104,10 @@
     }
 
     .main_section .con .con_bigbox .con_title,
+    .main_section > .con > .con_bigbox > h1, 
     .main_section .con .con_bigbox .e-count,
     #e-portfolio {
         width: 75%;
-    }
-    
-    #e-portfolio .tile {
-        max-height: 340px;
     }
 }
 
@@ -113,7 +122,6 @@
     
     #e-portfolio .tile {
         width: 50%;
-        max-height: 320px;
     }
 }
 
@@ -130,11 +138,10 @@
     
     #e-portfolio .tile {
         width: 100%;
-        max-height: inherit;
+        float: none;
         margin-bottom: 2rem;
     }
 }
-
 
 
 /*modal*/
