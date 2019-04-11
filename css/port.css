@@ -237,6 +237,11 @@
     .main_section > .con > .con_bigbox > h1 {
         width: 80%;
     }
+    
+    .main_section > .con > .con_bigbox > .con_title h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 
     .main_section > .con > .con_bigbox > .p-contents {
         display: block;

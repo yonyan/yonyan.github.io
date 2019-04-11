@@ -7,6 +7,22 @@ $('.menu-con>.m-hide').click(function () {
 });
 
 
+//top btn 누르면 제일 위로 올라가기
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('.top-btn').fadeIn();
+    } else {
+        $('.top-btn').fadeOut();
+    }
+});
+
+$('.top-btn').click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+});
 
 //포트폴리오 모달창 띄우기
 
@@ -40,8 +56,6 @@ $(window).keyup(function (e) {
         });
     }
 });
-
-
 
 
 //아트워크 

@@ -281,17 +281,25 @@
     .main_section > .con > .con_bigbox > .con_title {
         width: 80%;
     }
-
-    .main_section > .con > .con_bigbox > .con_pix {
-        width: 85%;
-        padding: 0.2rem;
+    
+    .main_section > .con > .con_bigbox > .con_title h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
+    .main_section > .con > .con_bigbox > .con_pix {
+        width: 90%;
+        padding: 0.2rem;
+    }
+    
     .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
         font-size: 1rem;
     }
 
     .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
         width: 90%;
+    }
+    .main_section > .con > .con_bigbox > .contents h6 {
+        font-weight: 700;
     }
 }

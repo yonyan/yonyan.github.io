@@ -68,7 +68,7 @@ p {
 
 .main_section > .menu > .logo > a > h1 {
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 100px;
 }
 
@@ -136,13 +136,13 @@ p {
     padding-bottom: 1rem;
 }
 
-/*menu nav*/
+/*menu nav max-width:1200px 부터의 메뉴*/
 
 .main_section > .menu > .menu_nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 1rem 1rem 0.5rem 0.2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1rem;
     display: none;
     z-index: 9;
 }
@@ -155,7 +155,7 @@ p {
     position: absolute;
     font-size: 0.6rem;
     color: #999;
-    left: -25px;
+    left: -12px;
     line-height: 1.2rem;
 }
 
@@ -172,8 +172,8 @@ p {
 
 .main_section > .menu > .menu-con .m-hide {
     position: absolute;
-    top: 3%;
-    right: 1rem;
+    top: 20px;
+    right: 25px;
     z-index: 7;
     width: 30px;
     height: 30px;
@@ -187,7 +187,6 @@ p {
     position: absolute;
     content: "";
     background-color: #999;
-    top: 0;
     left: 49%;
     width: 0.2%;
     height: 100%;
@@ -218,7 +217,6 @@ p {
 }
 
 @media(max-width:1200px) {
-
     .main_section {
         display: block;
     }
@@ -244,7 +242,7 @@ p {
         top: -200%;
         z-index: 99;
         background-color: #fff;
-        transition: 1s;
+        transition: 0.5s;
     }
 
     .main_section > .menu > .menu-con > .m-hide {
@@ -375,15 +373,16 @@ p {
 .main_section > .con .footer h6 {
     color: #fff;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
     border-bottom: 1px solid #fff;
+    line-height: 1.5;
 }
 
 .main_section > .con .footer p {
     color: #fff;
     font-size: 0.9rem;
-    line-height: 2.2;
-    font-weight: 300;
+    line-height: 2;
+    font-weight: 400;
 }
 
 /*con 반응형*/
@@ -392,13 +391,16 @@ p {
     .main_section > .con {
         width: 80%;
     }
+
     .main_section > .con > .img-card {
         padding: 7rem 4rem;
         column-gap: 1.5rem;
     }
+
     .main_section > .con > .img-card > .G-card {
         max-width: 350px;
     }
+
     .main_section > .con .footer div {
         width: 35%;
     }
@@ -408,13 +410,15 @@ p {
     .main_section > .con {
         width: 100%;
     }
+
     .main_section > .con > .img-card {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
     }
+
     .main_section > .con .footer div {
-        width: 38%;
+        width: 45%;
     }
 }
 
@@ -431,7 +435,8 @@ p {
     }
 
     .main_section > .con .footer div {
-        width: 45%;
+        width: 55%;
+        float: left;
     }
 
 }
@@ -451,4 +456,24 @@ p {
     .main_section > .con .footer div {
         width: 80%;
     }
+}
+
+/* top으로 올라가는 버튼 */
+a.top-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 48px;
+    padding: 10px 0px;
+    background-color: rgba(50, 50, 50, 0.8);
+    text-align: center;
+    line-height: 1;
+    font-size: 28px;
+    color: #fff;
+    z-index: 9999;
+    display: none;
+}
+
+a.top-btn i {
+    color: palegreen;
 }
