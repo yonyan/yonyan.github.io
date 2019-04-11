@@ -470,7 +470,7 @@ a.top-btn {
     line-height: 1;
     font-size: 28px;
     color: #fff;
-    z-index: 9999;
+    z-index: 999;
     display: none;
 }
 

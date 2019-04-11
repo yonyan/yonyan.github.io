@@ -1,0 +1,474 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.img-box {
+    width: 100%;
+    display: block;
+}
+
+h1,h5,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/*노멀라이징 */
+
+.section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*main_menu 시작*/
+
+.main_menu {
+    width: 100%;
+    background-color: #000;
+}
+
+.main_menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_menu > .logo {
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main_menu > .menu {
+    float: right;
+    padding: 30px;
+    position: relative;
+}
+
+.main_menu > .menu > div > ul > li {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.main_menu > .menu > div > ul > li > a {
+    padding: 0 25px;
+    display: block;
+    font-weight: 900;
+}
+
+/*m_menu  아이콘 시작*/
+
+.section > .main_menu > .m_menu {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-top: 10px;
+    display: none;
+}
+
+.section > .main_menu > .m_menu > div {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+
+.section > .main_menu > .m_menu > div > div {
+    width: 38px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px auto;
+}
+
+.section > .main_menu > .m_menu > div:active > div {
+    background-color: gold;
+}
+
+.menu > .m_hide {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-top: 10px;
+    z-index: 7;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    display: none;
+}
+
+.menu > .m_hide:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.menu > .m_hide::before,
+.menu > .m_hide::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 0;
+    left: 49%;
+    width: 2%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+
+.menu > .m_hide::after {
+    transform: rotate(-45deg);
+}
+
+/*main_menu 끝*/
+
+/*main_img 시작*/
+
+.main_img {
+    width: 100%;
+    background-color: #000;
+    padding: 0 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main_img > video {
+    width: 100%;
+    display: block;
+}
+
+.alterText {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 2%;
+    left: 10%;
+}
+
+.alterText > h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    line-height: 45px;
+    
+}
+
+.alterText > p {
+    font-size: 0.8rem;
+    color: darkgray;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+}
+
+/*main_img 끝*/
+
+/*메인까지 반응형 시작*/
+
+@media(max-width:1200px) and (min-width:701px) {
+    .section > .main_menu > .m_menu {
+        display: block;
+    }
+
+    .section > .main_menu > .menu {
+        position: absolute;
+        top: -200%;
+        width: 100%;
+        background-color: #000;
+        z-index: 3;
+        box-sizing: border-box;
+    }
+    .section > .main_menu > .menu.active {
+        top: 0;
+        left: 0;
+    }
+    .menu > .m_hide {
+        display: block;
+    }
+    .alterText {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 2%;
+        left: 13%;
+    }
+    .alterText > h5 {
+        font-size: 1.7rem;
+    }
+    .alterText > p {
+        display: none;
+    }
+
+}
+
+
+@media(max-width:700px) {
+    .section > .main_menu > .m_menu {
+        display: block;
+    }
+    .section > .main_menu > .menu {
+        position: absolute;
+        top: -200%;
+        width: 100%;
+        background-color: #000;
+        z-index: 3;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    .section > .main_menu > .menu.active {
+        top: 0;
+        left: 0;
+    }
+    .section > .main_menu > .menu > div:nth-of-type(1) {
+        width: 70%;
+    }
+    .section > .main_menu > .menu > div > ul > li > a {
+        padding: 15px;
+    }
+    .menu > .m_hide {
+        display: block;
+    }
+    .alterText {
+        display: none;
+    }
+
+}
+
+/*메인까지 반응형 끝*/
+
+//*메인 끝*//
+
+/*con 시작*/
+.con {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+.con > .row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.con > .row {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.con > .row > h1 {
+    padding: 1.1rem;
+    font-size: 1.3rem;
+    font-weight:900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+}
+
+.row > .cell {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0 !important;
+}
+
+.con > .row > .cell > .bar {
+    width: 100%;    
+    height: 3px;
+    background-color: #5c5c5c;
+    border-radius: 2px;
+    margin-bottom: 0 !important;
+}
+
+.con > .row > .cell > div {
+    margin-bottom: 2rem;
+}
+
+.con > .row > .cell > div > p:nth-of-type(1) {
+    font-size: 0.9rem;
+    color: #dfdfdf;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0.1rem 0;     
+}
+
+.con > .row > .cell > div > p:nth-of-type(2) {
+    font-size: 1rem;
+    color: #5c5c5c;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0.2rem 0;
+    letter-spacing: -1.5px;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+.con > .row > .cell > div > p:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
+.con > .row > .cell .img-box {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.con > .row > .cell > .img-box > img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.con > .row > .cell > .img-box > img:hover {
+    cursor: pointer;
+}
+
+
+.con_1 > .row > .cell > .img-box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*img-box 후버 효과 시작 */
+
+.row > .cell > .img-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: background 0.5s;
+    z-index: 1;
+}
+
+.row > .cell > .img-box::after {
+    content: "view more \f002";
+    font-family: FontAwesome;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 2;
+}
+
+.row > .cell > .img-box:hover::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row > .cell > .img-box:hover::after {
+    opacity: 1;
+}
+
+.row > .cell > .img-box:hover > img {
+    transform: scale(1.1);
+}
+
+
+/*con 반응형 시작*/
+
+.row > .cell-md-1-4 {
+    width: 25%; {
+        width: 90%;
+        
+    }
+}
+
+.row > .cell-md-2-4 {
+    width: 50%;
+}
+
+@media (max-width:1000px) {
+    .con > .row {
+        width: 90%;
+    }
+    .row > .cell-sm-1-4 {
+        width: 25%;
+    }
+    .row > .cell-sm-2-4 {
+        width: 50%;
+    }
+    .con > .row > .cell:nth-of-type(2n + 1) {
+    clear: both;
+    }    
+}
+
+@media (max-width:700px) {
+    .con > .row {
+        width: 100%;
+    }
+    .row > .cell-xs-1-2 {
+        width: 50%;
+    }
+    .row > .cell-xs-2-2 {
+        width: 100%;
+    }
+    .img-box > img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .con > .row > .cell > div > p:nth-of-type(2) {
+        height: auto;
+    }
+}
+
+/*con 반응형 끝*/
+
+/*con 끝*/
+
+/*footer 시작*/
+
+.footer {
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);    
+}
+.footer > div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;    
+}
+.footer > div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer > div > .footer_logo {
+    float: left; 
+    padding: 1rem 2rem;
+}
+.footer > div > .ft {
+    float: left;
+    padding: 1rem 2.5rem;
+}
+.footer > div > .ft > h1 {
+    color: rgba(255,255,255,0.6);
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+}
+.footer > div > .ft > p {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.75rem;
+    font-weight: 900;
+}
+
+/*footer 끝*/
