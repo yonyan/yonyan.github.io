@@ -493,6 +493,10 @@ input {
 
 .form-box > form > div > div > .textarea {
     font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .form-box > form > div > div {
@@ -500,6 +504,10 @@ input {
     margin-bottom: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1rem;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .form-box > form > div > div > *:first-child {
