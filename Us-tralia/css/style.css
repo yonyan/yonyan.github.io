@@ -582,16 +582,11 @@ input {
 
     .form-box > form > div > span {
         float: none;
-        display: block;
         padding: 0.5rem 0.2rem;
     }
 
     .form-box > form > div > div {
         margin-left: 0;
-    }
-
-    .form-box > form > div > div {
-        margin-bottom: 3px;
     }
 }
 
