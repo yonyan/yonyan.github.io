@@ -37,6 +37,13 @@ h6 {
     box-sizing: border-box;
 }
 
+input {
+    appearance: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 /*노멀라이징*/
 
 
