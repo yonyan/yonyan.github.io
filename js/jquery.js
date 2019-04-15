@@ -33,6 +33,7 @@ $('.port').click(function (e) {
     $('.modal-open').addClass('active');
     $('html, body').css({
         'overflow': 'hidden'
+        'overflow-scrolling': 'touch'
     });
 });
 
