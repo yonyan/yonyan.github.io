@@ -9,8 +9,6 @@
     outline: 0;
     display: none;
     height: 100%;
-    user-select: none;
-    -webkit-overflow-scrolling: touch; 
 }
 
 .modal.active {
@@ -34,6 +32,7 @@
 .modal {
     overflow-x: hidden;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; 
 }
 
 .modal-dialog {
