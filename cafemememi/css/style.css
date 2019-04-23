@@ -564,6 +564,11 @@ li {
     width: 200px;
 }
 
+#section3 .con_1 .product a {
+    width: 100%;
+    display: block;
+}
+
 #section3 .con_1 .product img {
     width: 75%;
     display: block;
