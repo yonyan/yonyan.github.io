@@ -1,0 +1,542 @@
+.responsive-menu-nav {
+    display: none;
+}
+
+/*반응형 시작*/
+
+
+@media(max-width:1600px) {
+    .topmenu {
+        height: 90px;
+    }
+
+    .topmenu .logo-box {
+        width: 15%;
+        padding-top: 25px;
+    }
+
+    .topmenu .basic-menu {
+        width: 13%;
+        top: 60%;
+        right: 0;
+    }
+
+    .topmenu .basic-menu li {
+        display: inline-block;
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        color: #3c3c3c;
+    }
+
+    .topmenu .main-menu > ul {
+        width: 70%;
+        padding: 0;
+    }
+
+    .topmenu .main-menu > ul > li {
+        width: 16%;
+        padding: 2.2rem 0rem 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .topmenu .main-menu > ul > li > div {
+        position: absolute;
+        top: 80px;
+        left: 15%;
+        width: 70%;
+        height: 270px;
+        font-size: 0.9rem;
+    }
+
+    #section0 .best-seller {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #section1 .mini-slider .fp-controlArrow.fp-next {
+        left: 46%;
+    }
+
+    #section2 .slide#slide1 img,
+    #section2 .slide#slide2 video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+
+    #section3 .con_2 .product {
+        width: 220px;
+    }
+
+    #section3 .con_2 {
+        padding: 5rem;
+        max-height: none;
+    }
+
+    #section4 .kitchen-box .k-row1 {
+        width: 75%;
+    }
+}
+
+@media(max-width:1200px) {
+    .responsive-menu-nav {
+        display: block;
+        width: 45px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 1s;
+    }
+
+    .responsive-menu-nav div {
+        width: 40px;
+        height: 4px;
+        margin: 4px auto;
+        background: #3c3c3c;
+        box-sizing: border-box;
+        transition: all 1s;
+    }
+
+    .responsive-menu-nav.active div {
+        display: none;
+    }
+
+    .m-hide {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 40px;
+        box-sizing: border-box;
+        display: none;
+        transition: all 1s;
+    }
+
+    .m-hide::before,
+    .m-hide::after {
+        position: absolute;
+        content: "";
+        background-color: #3c3c3c;
+        left: 50%;
+        width: 0.2%;
+        height: 100%;
+        transform: rotate(45deg);
+        transition: scale 3s;
+        padding: 1.2px;
+    }
+
+    .m-hide::after {
+        transform: rotate(-45deg);
+    }
+
+    .m-hide.active {
+        display: block;
+    }
+
+    .topmenu .main-menu > ul {
+        width: 100%;
+        top: 100%;
+        position: absolute;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: all 1s;
+        padding: 1rem;
+    }
+
+    .topmenu .main-menu > ul.active {
+        opacity: 1;
+    }
+
+    .topmenu .main-menu > ul > li {
+        padding: 0.5rem;
+        width: 16.6666%;
+    }
+
+    .topmenu .main-menu > ul > li > div {
+        position: inherit;
+        display: block;
+        opacity: 1;
+        width: 100%;
+        height: 300px;
+        padding-top: 1rem;
+        margin-top: 0.3rem;
+        border-top: 1px solid #3c3c3c;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .topmenu .main-menu > ul > li div .sub-menu-1,
+    .topmenu .main-menu > ul > li div .sub-menu-2 {
+        position: inherit;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.2rem;
+        transition: all 1s;
+    }
+
+    .topmenu .main-menu > ul > li div li {
+        font-size: 0.8rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .topmenu .main-menu > ul > li div .menu-img-box {
+        position: inherit;
+        display: none;
+    }
+
+    .topmenu .logo-box {
+        width: 25%;
+        max-width: 200px;
+    }
+
+    .topmenu .basic-menu {
+        width: 25%;
+        top: 50%;
+    }
+
+    .topmenu .basic-menu li {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    #section0 .intro-1 .big-logo {
+        max-width: 320px;
+    }
+
+    #section0 .intro-2 p {
+        font-size: 0.9rem;
+    }
+
+    #section0 .best-seller {
+        width: 72%;
+        margin: 0 auto;
+    }
+
+    #section1 > div {
+        display: block;
+    }
+
+    #section1 .mini-slider {
+        width: 100%;
+    }
+
+    #section1 .next-to-slider {
+        display: none;
+    }
+
+
+    #section1 .next-to-slider > div {
+        top: 35%;
+    }
+
+    #section1 .mini-slider .fp-controlArrow.fp-next {
+        left: 91%;
+    }
+
+    #sweets,
+    #sweets-2 {
+        width: 30%;
+    }
+
+    #section2 .slide#slide1 p {
+        font-size: 1.1rem;
+    }
+
+    #move-text h1 {
+        font-size: 3rem;
+    }
+
+    #move-text h3 {
+        font-size: 1.3rem;
+    }
+
+    #move-text i.fp-next {
+        font-size: 40px;
+        width: 130px;
+    }
+
+    #section3 .con_1 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    #section3 .con_2 {
+        padding: 0 3rem;
+    }
+
+    #section4 .kitchen-box .k-row1 {
+        width: 90%;
+    }
+
+    #section4 .kitchen-box .k-row1 .kcon-1-2,
+    #section4 .kitchen-box .k-row1 .kcon-2-2 {
+        width: 50%;
+    }
+
+    .login-layer {
+        width: 80%;
+    }
+}
+
+@media(max-width:780px) {
+    .responsive-menu-nav div {
+        width: 35px;
+        height: 4px;
+        margin: 4px auto;
+    }
+
+    .topmenu .main-menu > ul > li {
+        padding: 0.5rem;
+        width: 25%;
+    }
+
+    .topmenu .main-menu > ul > li > div {
+        padding-top: 0.5rem;
+    }
+
+    .topmenu .logo-box {
+        width: 30%;
+        max-width: 200px;
+    }
+
+    .topmenu .basic-menu {
+        width: 30%;
+        top: 40%;
+    }
+
+    .topmenu .basic-menu li {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    #section0 .best-seller {
+        width: 95%;
+    }
+
+    #section0 .best-seller div {
+        width: 33.333%;
+    }
+
+    #section0 .best-seller div:last-child {
+        display: none;
+    }
+
+    #section1 .mini-slider .fp-controlArrow.fp-prev {
+        left: 4%;
+    }
+
+    #section5 footer .footer-bt ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    #section5 footer .footer-bt li {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    #section5 footer .footer-bt dl {
+        width: 100%;
+    }
+
+    .login-layer {
+        width: 90%;
+    }
+}
+
+@media(max-width:420px) {
+    .responsive-menu-nav {
+        left: 90%;
+    }
+
+    .m-hide {
+        left: 90%;
+    }
+
+    .responsive-menu-nav div {
+        width: 35px;
+        height: 4px;
+        margin: 4px auto;
+    }
+
+    .topmenu .main-menu > ul > li {
+        padding: 0.5rem;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .topmenu .main-menu > ul > li > div {
+        display: none;
+        height: auto;
+    }
+
+    .topmenu .logo-box {
+        width: 45%;
+    }
+
+    .topmenu .basic-menu {
+        width: 45%;
+        top: 10%;
+    }
+
+    .topmenu .basic-menu li {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    #section1 .next-to-slider {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 24.7%;
+        width: 100%;
+    }
+
+    #section1 .mini-slider .fp-controlArrow.fp-prev {
+        left: 4.5%;
+    }
+
+    #section1 .mini-slider .fp-controlArrow.fp-next {
+        left: 86.5%;
+    }
+
+    #slide-text h2 {
+        padding: 0.3rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    #slide-text p {
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+
+    #sweets {
+        width: 55%;
+        max-width: 280px;
+    }
+
+    #section2 .slide#slide1 p {
+        font-size: 0.9rem;
+        width: 65%;
+        padding: 2rem 1rem;
+    }
+
+    #move-text h1 {
+        font-size: 2rem;
+        padding: 1rem;
+        line-height: 1;
+    }
+
+    #move-text h3 {
+        font-size: 1.2rem;
+    }
+
+    #section3 .con_1 {
+        padding: 2rem 0;
+        margin-top: 0;
+    }
+
+    #section3 .con_1 .product {
+        display: inline-block;
+        width: 140px;
+    }
+
+    #section3 .con_2 p {
+        padding-bottom: 2rem;
+    }
+
+    #section3 .con_2 .life-row {
+        display: block;
+    }
+
+    #section3 .con_2 .life-box {
+        width: 90%;
+        margin: 0.5rem auto;
+        position: relative;
+    }
+
+    #section3 .con_2 .life-box:last-child {
+        display: none;
+    }
+
+    #section3 .con_2 .life-box div > p {
+        top: 25%;
+    }
+
+    #section3 .con_2 .life-box div > h6 {
+        top: 75%;
+    }
+
+    #section4 .kitchen-title p {
+        padding-bottom: 2rem;
+    }
+
+
+    #section4 .kitchen-box .k-row1 {
+        width: 90%;
+        display: block;
+    }
+
+    #section4 .kitchen-box .k-row1 .kcon-1-2,
+    #section4 .kitchen-box .k-row1 .kcon-2-2 {
+        width: 100%;
+    }
+
+    #section4 .kitchen-box .k-row1 .kcon-1-2 > a img,
+    #section4 .kitchen-box .k-row1 .kcon-2-2 > a img {
+        padding: 0.25rem;
+    }
+
+    #sweets-2 {
+        width: 45%;
+    }
+
+    .fp-viewing-lastPage #sweets-2 {
+        bottom: -4%;
+    }
+
+    #section5 footer .footer-top {
+        padding: 10rem 1rem;
+    }
+
+    #section5 footer .footer-bt {
+        max-height: 400px;
+    }
+
+    .login-layer {
+        width: 85%;
+    }
+
+    .login-layer > div {
+        float: none;
+    }
+
+    .login-layer > .lo-row1 {
+        display: none;
+    }
+
+    .login-layer > .lo-row2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .login-layer .login {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .login-layer .login h1 {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+}

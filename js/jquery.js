@@ -24,11 +24,12 @@ $('.top-btn').click(function () {
     return false;
 });
 
+
 //포트폴리오 모달창 띄우기
 
 $('.port').click(function (e) {
-    console.log(e.currentTarget.dataset.target);
-    $(e.currentTarget.dataset.target).addClass('active')
+    var target = $(this).data('target');
+    $(target).addClass('active')
         .get(0).focus();
     $('.modal-open').addClass('active');
     $('html, body').css({
@@ -91,3 +92,4 @@ $(function () {
 
     });
 });
+
