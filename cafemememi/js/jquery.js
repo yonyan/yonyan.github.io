@@ -22,7 +22,7 @@ $('.con_1').on('mousemove touchmove', function (e) {
     var width = $place.width();
     var scrollWidth = $place.prop("scrollWidth");
 
-    $place.scrollLeft(offsetX / width * scrollWidth - width / 8);
+    $place.scrollLeft(offsetX / width * scrollWidth - width / 20);
 });
 
 
