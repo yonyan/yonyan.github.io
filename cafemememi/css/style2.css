@@ -398,7 +398,7 @@
         display: block;
         position: absolute;
         left: 0;
-        top: 24.7%;
+        top: 10%;
         width: 100%;
     }
 
@@ -450,6 +450,10 @@
         display: inline-block;
         width: 140px;
     }
+    
+    #section3 .con_2 {
+        padding-top: 1rem;
+    }
 
     #section3 .con_2 p {
         padding-bottom: 2rem;
@@ -475,6 +479,9 @@
 
     #section3 .con_2 .life-box div > h6 {
         top: 75%;
+    }
+    #section4 .kitchen-title {
+        padding-top: 1rem;
     }
 
     #section4 .kitchen-title p {
