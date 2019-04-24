@@ -154,6 +154,7 @@ li {
     text-align: justify;
     opacity: 0;
     transition: all 1s;
+    z-index: 999;
 }
 
 .topmenu .main-menu > ul > li:hover div {
@@ -863,7 +864,7 @@ li {
 /* 로그인박스 시작 */
 
 .login-layer {
-    width: 60%;
+    width: 100%;
     max-width: 700px;
     text-align: center;
     position: fixed;
@@ -872,6 +873,7 @@ li {
     transform: translate(-50%, -50%);
     display: none;
     background-color: #fff;
+    z-index: 9999 !important;
 }
 
 .login-layer > div {
