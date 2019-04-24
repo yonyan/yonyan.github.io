@@ -450,7 +450,7 @@
         display: inline-block;
         width: 140px;
     }
-    
+
     #section3 .con_2 {
         padding-top: 1rem;
     }
@@ -480,6 +480,7 @@
     #section3 .con_2 .life-box div > h6 {
         top: 75%;
     }
+
     #section4 .kitchen-title {
         padding-top: 1rem;
     }
@@ -502,6 +503,16 @@
     #section4 .kitchen-box .k-row1 .kcon-1-2 > a img,
     #section4 .kitchen-box .k-row1 .kcon-2-2 > a img {
         padding: 0.25rem;
+    }
+
+    #section4 .kitchen-box .k-row1 .kcon-1-2 > a div,
+    #section4 .kitchen-box .k-row1 .kcon-2-2 > a div {
+        display: none;
+    }
+
+    #section4 .kitchen-box .k-row1 .kcon-1-2 > a:hover div,
+    #section4 .kitchen-box .k-row1 .kcon-2-2 > a:hover div {
+        display: none;
     }
 
     #sweets-2 {
