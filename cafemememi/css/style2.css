@@ -426,15 +426,28 @@
         top: 16.5%;
         width: 100%;
     }
+    
+    .fp-controlArrow.fp-prev {
+        width: 30px;
+        height: 30px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .fp-controlArrow.fp-next {
+        width: 30px;
+        height: 30px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
 
     #section1 .mini-slider .fp-controlArrow.fp-prev {
         left: 4.5%;
-        top: 52.5%;
+        top: 53%;
     }
 
     #section1 .mini-slider .fp-controlArrow.fp-next {
         left: 86.5%;
-        top: 52.5%;
+        top: 53%;
     }
 
     #slide-text h2 {
