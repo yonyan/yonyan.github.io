@@ -396,6 +396,7 @@
 
     #section0 {
         margin-top: 85px;
+        padding-bottom: 2rem;
     }
 
     #section0 .intro-1 {
@@ -413,7 +414,7 @@
     #section0 .best-seller {
         width: 90%;
     }
-
+    
     #section1 .next-to-slider {
         display: block;
         position: absolute;
@@ -475,6 +476,10 @@
             left: 50%;
         }
     }
+    
+    #section3 {
+        padding: 4rem 0;
+    }
 
     #section3 .con_1 {
         padding: 2rem 0;
@@ -518,6 +523,10 @@
 
     #section3 .con_2 .life-box div > h6 {
         top: 75%;
+    }
+    
+    #section4 {
+        padding: 4rem 0;
     }
 
     #section4 .kitchen-title {
