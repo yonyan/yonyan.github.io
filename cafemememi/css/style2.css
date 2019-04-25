@@ -415,6 +415,10 @@
         width: 90%;
     }
     
+    #section1 {
+        padding: 1rem 0;
+    }
+    
     #section1 .next-to-slider {
         display: block;
         position: absolute;
@@ -425,10 +429,12 @@
 
     #section1 .mini-slider .fp-controlArrow.fp-prev {
         left: 4.5%;
+        top: 60%;
     }
 
     #section1 .mini-slider .fp-controlArrow.fp-next {
         left: 86.5%;
+        top: 60%;
     }
 
     #slide-text h2 {
