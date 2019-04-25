@@ -394,11 +394,27 @@
         padding: 0.5rem;
     }
 
+    #section0 .intro-1 {
+        height: 45%;
+    }
+
+    #section0 .intro-2 {
+        height: 55%;
+    }
+
+    #section0 .intro-2 h2 {
+        font-size: 1.2rem;
+    }
+
+    #section0 .best-seller {
+        width: 90%;
+    }
+
     #section1 .next-to-slider {
         display: block;
         position: absolute;
         left: 0;
-        top: 15%;
+        top: 17.5%;
         width: 100%;
     }
 
@@ -432,7 +448,7 @@
     }
 
     #move-text h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 1rem;
         line-height: 1;
     }
@@ -453,6 +469,10 @@
 
     #section3 .con_2 {
         padding-top: 1rem;
+    }
+
+    #section3 .con_2 h2 {
+        font-size: 1.2rem;
     }
 
     #section3 .con_2 p {
@@ -485,13 +505,17 @@
         padding-top: 1rem;
     }
 
+    #section4 .kitchen-title h2 {
+        font-size: 1.2rem;
+    }
+
     #section4 .kitchen-title p {
         padding-bottom: 2rem;
     }
 
-
     #section4 .kitchen-box .k-row1 {
-        width: 88%;
+        width: 80%;
+        padding-bottom: 2rem;
         display: block;
     }
 
