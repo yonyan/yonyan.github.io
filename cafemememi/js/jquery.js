@@ -33,7 +33,7 @@ if (window.jQuery) {
     })
   }
 }
-$('.con_1').mememiScroller(50);
+$('.con_1').mememiScroller(20);
 
 // 로그인박스 시작
 function showLoginMoal() {
