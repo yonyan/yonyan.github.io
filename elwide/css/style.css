@@ -1,0 +1,717 @@
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/*노멀라이징*/
+
+.img-box {
+    width: 100%;
+    display: block;
+}
+
+/* menu 시작*/
+
+.menu {
+    width: 13%;
+    min-width: 160px;
+    border: 1px solid #dfdfdf;
+    top: 30px;
+    left: 30px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99;
+    box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.menu > .logo {
+    width: 80%;
+    box-sizing: border-box;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.menu > .menu_1 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.menu_1 > ul > li {
+    font-size: 1rem;
+    padding: 0.2rem 0;
+    color: #5c5c5c;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu_1 > ul > li:hover {
+    color: #000;
+}
+
+.menu > .menu_2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+
+.menu_2 > p {
+    font-size: 0.65rem;
+    text-align: center;
+    color: gray;
+    margin-bottom: 0.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu_2 > .sns_icon {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.menu_2 > .sns_icon > div {
+    width: 33.3333%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.menu_2 > .sns_icon > div img {
+    width: 90%;
+    display: block;
+    margin:  0 auto;
+    padding: 0.2rem;
+}
+
+.menu_2 > .sns_icon > div:hover {
+    cursor: pointer;
+}
+
+/* menu 끝*/
+
+/*section1 시작 */
+
+.section1 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    user-select: none;
+}
+
+/*글씨효과*/
+
+.section1 section {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9;
+}
+
+.section1 section video {
+    width: 100%;
+    display: block;
+}
+
+.section1 section .alterText {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.section1 section .intro {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+    text-align: right;
+}
+
+.section1 section .intro > p {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section1 section .intro_more {
+    position: absolute;
+    top: 76%;
+    right: 5%;
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    width: 80px;
+    height: 30px;
+}
+
+.section1 section .intro_more:hover {
+    cursor: pointer;
+}
+
+.intro_more > .intro_move {
+    width: 0;
+    height: 30px;
+    transition-property: background-color, width;
+    transition-duration: 0.1s, 1s;
+}
+
+.intro_more:hover > .intro_move {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgba(134, 204, 218, 0.5);
+}
+
+.intro_more > h4 {
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 12%;
+    right: 10%;
+}
+
+/*글씨효과 끝*/
+
+/*section1 끝*/
+
+/*section2 시작*/
+
+.section2 {
+    width: 70%;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.section2 .content {
+    perspective: 300px;
+    -webkit-perspective: 1000px;
+    margin: 5% auto;
+    width: 96%;
+    position: relative;
+    display: flex;
+}
+
+.content > div {
+    width: 33.3333%;
+    position: absolute;
+    box-shadow: 3px 9px 20px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    color: #fff;
+}
+
+.content > div:hover {
+    cursor: pointer;
+}
+
+.content > .con1 {
+    top: 0%;
+    left: 0.1%;
+    transform: rotateY(2.6deg);
+    -webkit-transform: rotateY(11deg);
+}
+
+.content > .con2 {
+    top: 0%;
+    left: 32.8%;
+    transform: rotateY(-3deg);
+    -webkit-transform: rotateY(-11deg);
+    z-index: 2;
+}
+
+.content > .con3 {
+    top: 0%;
+    left: 66.3%;
+    transform: rotateY(-3.2deg);
+    -webkit-transform: rotateY(-14deg);
+}
+
+.content > .con1:hover {
+    left: 0.25%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
+.content > .con2:hover {
+    left: 33.5%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
+.content > .con3:hover {
+    left: 66.3%;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
+.con1 > h2,
+.con2 > h2,
+.con3 > h2 {
+    color: #fff;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 6px 3px 9px 0px rgba(0, 0, 0, 0.9);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*section2 끝*/
+
+/*section3 시작*/
+
+.section3 {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dfdfdf;
+    user-select: none;
+    padding-bottom: 4rem;
+}
+
+.section3 > .artists {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.artists > h4 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section3 > .img-card {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-card::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section3 > .img-card .card {
+    background: #fff;
+    border-radius: 2px;
+    float: right;
+    width: 17%;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    text-align: center;
+}
+
+.section3 > .img-card .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+.section3 > .img-card .card img {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.section3 > .img-card .card > h4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #5c5c5c;
+    font-size: 0.9rem;
+}
+
+.section3 > .img-card .card > p {
+    font-size: 0.7rem;
+    color: #5c5c5c;
+    padding: 0.7rem 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section3 > .img-card .card-more {
+    width: 50px;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 99;
+}
+
+.card-more > i {
+    color: #fff;
+    font-size: 2.7rem;
+}
+
+.card-more:hover {
+    cursor: pointer;
+}
+
+/*section3 끝*/
+
+/*section4 시작*/
+
+.section4 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 4rem;
+    padding-left: 17%;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.section4 > .music {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.music > h4 {
+    font-size: 1.5rem;
+    color: #5c5c5c;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section4 .row1, .section4 .row2 {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+
+.section4 .img-music {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.section4 .img-music .m-img {
+    width: 20%;
+    padding: 0.5rem;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+.section4 .img-music .m-img img {
+    width: 100%;
+    display: block;
+}
+
+.section4 .row1 .m-img:hover {
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.section4 .row2 .m-img:hover {
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.section4 .sub_music {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.section4 .sub_music > div {
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.section4 .sub_music > div > p {
+    color: #5c5c5c;
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section4 .sub_music > div > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*section4 끝*/
+
+/*section5 시작 */
+
+.section5 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-left: 17%;
+    user-select: none;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.section5 > .project {
+    width: 100%;
+    border-bottom: 3px solid #dfdfdf;
+}
+
+.section5 > .project > h2 {
+    font-size: 1.5rem;
+    color: #5c5c5c;
+    padding: 10px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section5::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section5 > section {
+    float: left;
+    width: 33.3333%;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.section5 > article {
+    float: left;
+    width: 32%;
+}
+
+.section5 > section > div {
+    width: 95%;
+    padding: 0.5rem;
+}
+
+.section5 > section > div > h4 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.card2 {
+    background: #fff;
+    border-radius: 2px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card3 {
+    background: #fff;
+    border-radius: 2px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card4 {
+    background: #fff;
+    border-radius: 2px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.menu-2 > ul > li,
+.menu-3 > ul > li,
+.menu-4 > ul > li {
+    float: left;
+}
+
+.menu-2 > ul::after,
+.menu-3 > ul::after,
+.menu-4 > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-2 > ul,
+.menu-3 > ul,
+.menu-4 > ul {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-2 > ul > li > a,
+.menu-3 > ul > li > a,
+.menu-4 > ul > li > a {
+    display: block;
+    padding: 0.7rem 1rem;
+    position: relative;
+    font-size: 0.9rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #5c5c5c;
+}
+
+.menu-2 > ul > li.active > a::after,
+.menu-3 > ul > li.active > a::after,
+.menu-4 > ul > li.active > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: calc(100% - 1px);
+    left: 0;
+    background-color: #dfdfdf;
+}
+
+.menu-2-contents > div,
+.menu-3-contents > div,
+.menu-4-contents > div {
+    display: none;
+    padding: 1.5rem 0;
+}
+
+.menu-2-contents > div.active,
+.menu-3-contents > div.active,
+.menu-4-contents > div.active {
+    display: block;
+}
+
+.menu-2-contents > div > p,
+.menu-3-contents > div > p,
+.menu-4-contents > div > p {
+    padding: 0.5rem 1rem;
+    color: #5c5c5c;
+    font-size: 0.75rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu-2-contents > div > p:hover,
+.menu-3-contents > div > p:hover,
+.menu-4-contents > div > p:hover {
+    cursor: pointer;
+}
+
+.section5 > article {
+    overflow: hidden;
+}
+
+article > div {
+    position: relative;
+    margin: 1.5rem 0 1rem 1.5rem;
+}
+article > div img {
+    width: 100%;
+    display: block;
+}
+
+article > div > .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    width: 120px;
+    height: 35px;
+}
+
+article > div > .box > .bg-move {
+    width: 0px;
+    height: 35px;
+    transition-property: background-color, width;
+    transition-duration: 0.1s, 1s;
+}
+
+article > div > .box:hover > .bg-move {
+    width: 120px;
+    background-color: rgba(134, 204, 218, 0.5);
+}
+
+article > div > .box:hover {
+    cursor: pointer;
+}
+
+article > div > .box > h4 {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+article > div > h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+}
+
+article > div > p {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 10px;
+    font-size: 0.75rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*section5 끝*/
+
+/*footer 시작*/
+
+.footer {
+    width: 97%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 2px solid #dfdfdf;
+    user-select: none;
+    padding: 1rem 3rem;
+}
+
+.footer div > h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer div > p {
+    padding: 10px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 0.8rem;
+
+}
+
+/*footer 끝*/
