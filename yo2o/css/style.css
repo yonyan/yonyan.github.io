@@ -74,6 +74,9 @@ p {
     font-size: 1.4rem;
     font-weight: 700;
 }
+.main_menu > .menu > div > ul > li > a:hover {
+    color: gold;
+}
 
 /*m_menu  아이콘 시작*/
 
@@ -292,7 +295,7 @@ p {
 }
 
 .con_2 > .row {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 .con > .row > h1 {
