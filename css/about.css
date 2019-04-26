@@ -44,7 +44,7 @@
 
 .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #fff;
     opacity: 0;
@@ -137,20 +137,20 @@
     border-bottom: 1px solid #dfdfdf;
 }
 
-.main_section > .con > .con_bigbox > .contents h6 {
+.main_section > .con > .con_bigbox > .contents > h6 {
     text-align: center;
     color: #3c3c3c;
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .main_section > .con > .con_bigbox > .contents > p {
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #3c3c3c;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
 }
 
 .main_section > .con > .con_bigbox > .contents > .c-item-box {
@@ -179,6 +179,14 @@
     margin: 0.2rem;
 }
 
+.main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item > .c-con h6 {
+    text-align: center;
+    color: #3c3c3c;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item > .c-con > a {
     display: block;
 }
@@ -188,7 +196,7 @@
 }
 
 .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item > .c-con p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #3c3c3c;
     line-height: 1.2rem;
 }
@@ -221,10 +229,6 @@
         width: 70%;
     }
 
-    .main_section > .con > .con_bigbox > .contents h6 {
-        font-size: 0.9rem;
-    }
-
     .main_section > .con > .con_bigbox > h1 {
         width: 70%;
     }
@@ -243,9 +247,6 @@
         width: 75%;
     }
 
-    .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
-        font-size: 1.5rem;
-    }
 }
 
 @media(max-width:800px) {
@@ -254,7 +255,7 @@
     }
 
     .main_section > .con > .con_bigbox > .con_title h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
@@ -281,24 +282,25 @@
     .main_section > .con > .con_bigbox > .con_title {
         width: 80%;
     }
-    
+
     .main_section > .con > .con_bigbox > .con_title h2 {
         font-size: 1.5rem;
         font-weight: 700;
     }
 
     .main_section > .con > .con_bigbox > .con_pix {
-        width: 90%;
+        width: 93%;
         padding: 0.2rem;
     }
-    
+
     .main_section > .con > .con_bigbox > .con_pix > .t-box > .box {
         font-size: 1rem;
     }
 
     .main_section > .con > .con_bigbox > .contents > .c-item-box > .c-item {
-        width: 90%;
+        width: 95%;
     }
+
     .main_section > .con > .con_bigbox > .contents h6 {
         font-weight: 700;
     }
