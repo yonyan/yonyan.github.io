@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -20,7 +21,8 @@ a {
     display: block;
 }
 
-h1,h5,
+h1,
+h5,
 p {
     padding: 0;
     margin: 0;
@@ -69,7 +71,8 @@ p {
 .main_menu > .menu > div > ul > li > a {
     padding: 0 25px;
     display: block;
-    font-weight: 900;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 /*m_menu  아이콘 시작*/
@@ -165,7 +168,7 @@ p {
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
     line-height: 45px;
-    
+
 }
 
 .alterText > p {
@@ -192,21 +195,30 @@ p {
         z-index: 3;
         box-sizing: border-box;
     }
+
+    .main_menu > .menu > div > ul > li > a {
+        font-size: 1.1rem;
+    }
+
     .section > .main_menu > .menu.active {
         top: 0;
         left: 0;
     }
+
     .menu > .m_hide {
         display: block;
     }
+
     .alterText {
         display: block;
         position: absolute;
         z-index: 3;
     }
+
     .alterText > h5 {
         font-size: 2rem;
     }
+
 }
 
 
@@ -214,6 +226,7 @@ p {
     .section > .main_menu > .m_menu {
         display: block;
     }
+
     .section > .main_menu > .menu {
         position: absolute;
         top: -200%;
@@ -223,23 +236,30 @@ p {
         padding: 10px 0;
         box-sizing: border-box;
     }
+
     .section > .main_menu > .menu.active {
         top: 0;
         left: 0;
     }
+
     .section > .main_menu > .menu > div:nth-of-type(1) {
         width: 70%;
     }
+
     .section > .main_menu > .menu > div > ul > li > a {
-        padding: 15px;
+        padding: 10px;
+        font-size: 1rem;
     }
+
     .menu > .m_hide {
         display: block;
     }
+
     .alterText > h5 {
         font-size: 1.4rem;
         line-height: 30px;
     }
+
     .alterText > p {
         display: none;
     }
@@ -270,6 +290,7 @@ p {
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 .con_2 > .row {
     padding-bottom: 50px;
 }
@@ -291,7 +312,7 @@ p {
 }
 
 .con > .row > .cell > .bar {
-    width: 100%;    
+    width: 100%;
     height: 3px;
     background-color: #5c5c5c;
     border-radius: 2px;
@@ -306,7 +327,7 @@ p {
     font-size: 0.9rem;
     color: #9c9c9c;
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 0.1rem 0;     
+    padding: 0.1rem 0;
 }
 
 .con > .row > .cell > div > p:nth-of-type(2) {
@@ -338,7 +359,6 @@ p {
 .con > .row > .cell > .img-box > img:hover {
     cursor: pointer;
 }
-
 
 .con_1 > .row > .cell > .img-box {
     border-radius: 10px;
@@ -390,7 +410,7 @@ p {
 /*con 반응형 시작*/
 
 .row > .cell-md-1-4 {
-    width: 25%; 
+    width: 25%;
 }
 
 .row > .cell-md-2-4 {
@@ -401,35 +421,40 @@ p {
     .con > .row {
         width: 70%;
     }
+
     .con_2 > .row {
         padding: 0 0 50px 0;
     }
-    
+
     .row > .cell-sm-2-4 {
         width: 50%;
         padding: 1rem;
     }
+
     .con > .row > .cell:nth-of-type(2n + 1) {
-    clear: both;
-    }    
+        clear: both;
+    }
 }
 
 @media (max-width:700px) {
     .con > .row {
         width: 100%;
     }
+
     .row > .cell-xs-1-2 {
         width: 50%;
     }
+
     .row > .cell-xs-2-2 {
         width: 100%;
         padding: 3rem 2rem;
     }
-    
+
     .img-box {
         width: 95%;
         margin: 0 auto;
     }
+
     .con > .row > .cell > div > p:nth-of-type(2) {
         height: auto;
     }
@@ -443,33 +468,39 @@ p {
 
 .footer {
     width: 100%;
-    background-color: rgba(0,0,0,0.85);    
+    background-color: rgba(0, 0, 0, 0.85);
 }
+
 .footer > div {
     width: 80%;
     margin: 0 auto;
-    padding: 1rem;    
+    padding: 1rem;
 }
+
 .footer > div::after {
     content: "";
     display: block;
     clear: both;
 }
+
 .footer > div > .footer_logo {
-    float: left; 
+    float: left;
     padding: 1rem 2rem;
 }
+
 .footer > div > .ft {
     float: left;
     padding: 1rem 2.5rem;
 }
+
 .footer > div > .ft > h1 {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
     padding-bottom: 0.2rem;
 }
+
 .footer > div > .ft > p {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.75rem;
     font-weight: 900;
 }
