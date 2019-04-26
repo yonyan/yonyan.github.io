@@ -140,15 +140,14 @@
     .topmenu .main-menu > ul {
         width: 100%;
         top: 100%;
-        position: absolute;
-        opacity: 0;
+        position: absolute;    
         background-color: rgba(255, 255, 255, 0.9);
-        transition: all 1s;
         padding: 1rem;
+        display: none;
     }
 
     .topmenu .main-menu > ul.active {
-        opacity: 1;
+        display: block;
     }
 
     .topmenu .main-menu > ul > li {
