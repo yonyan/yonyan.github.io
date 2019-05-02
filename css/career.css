@@ -102,6 +102,11 @@
     position: relative;
 }
 
+.main_section > .con > .con_bigbox > .contents > div a {
+    width: 100%;
+    display: block;
+}
+
 .main_section > .con > .con_bigbox > .contents > div img {
     width: 80%;
     margin: 0 auto;
@@ -129,6 +134,7 @@
 
 .main_section > .con > .con_bigbox > .contents > div > .goto-box2 {
     width: 100px;
+    height: 35px;
     padding: 0.35rem;
     text-align: center;
     background-color: #3c3c3c;
@@ -149,7 +155,7 @@
     color: #fff;
     text-align: center;
     font-size: 0.9rem;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .main_section > .con > .con_bigbox > h1 {
